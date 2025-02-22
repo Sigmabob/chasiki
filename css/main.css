@@ -1,0 +1,174 @@
+.wrapper {
+    min-height: 100%;
+    font-family: "League Spartan", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    color: #161515;
+    font-size: 32px;
+}
+
+.welcome {
+    background-color: #f8f8f8;
+}
+
+.welcome__container {
+    display: flex;
+    justify-content: center;
+}
+
+.offer {
+    padding-top: 104px;
+    max-width: 640px;
+}
+
+.offer__model {
+    font-weight: 300;
+    font-size: 24px;
+    margin-bottom: 53px;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 250px;
+    color: #272727;
+    line-height: 0.9;
+    margin-bottom: 29px;
+}
+
+.desc {
+    font-size: 32px;
+    line-height: 1.55;
+}
+
+.offer__desc {
+    margin-bottom: 51px;
+}
+
+.buy {
+    display: flex;
+    margin-bottom: 168px;
+}
+
+.buy__link {
+    background-color: #161515;
+    color: #fff;
+    font-size: 32px;
+    padding: 24px 74px;
+    display: inline-block;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+
+}
+
+.buy__link:hover {
+    background-color: #fff;
+    color: #161515;
+    border-color: #161515;
+
+}
+
+.buy__link:active {
+    background-color: #f1f0f0;
+    /* insect-внутренняя тень */
+    box-shadow: inset 0px 0px 4px 4px rgba(0, 0, 0, 0.5);
+    border-color: transparent;
+}
+
+.buy__price {
+    /* Тень 
+    box-shadow: смещение_по_x смещение_по_y размытие растяжение цвет 
+     */
+    box-shadow: 0 0 28px 0 rgba(214, 214, 214, 0.25);
+    background-color: #fff;
+    display: inline-flex;
+    align-items: center;
+    font-size: 32px;
+    color: #272727;
+    padding: 0px 33px;
+
+}
+
+.welcome__img-wrap {
+    /* запретить flex элементу ужиматься если не хватает места в  flex-контейнере */
+    flex-shrink: 0;
+}
+
+.products {
+    padding-top: 43px;
+    padding-bottom: 142px;
+}
+
+.products__container {
+    max-width: 531px;
+    text-align: center;
+}
+
+.products__header {
+    color: #000;
+    margin-bottom: 194px;
+}
+
+.supertitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.products__title {
+    font-weight: 400px;
+    font-size: 72px;
+}
+
+.products__list {}
+
+/* установить внешний нижний отступ для карточки (кроме посследнего братского элемента с этим классом) */
+.product:not(:last-child) {
+    margin-bottom: 150px;
+}
+
+.product__img {
+    max-width: 286px;
+    margin-bottom: 132px;
+}
+
+.product__desc {}
+
+.produdct__title {
+    font-weight: 400;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.product__text {
+    line-height: 155%;
+}
+
+.products__desc {}
+
+.products__desc-title {
+    font-weight: 400;
+    margin-bottom: 49px;
+    font-size: 32px;
+    font-size: 32px;
+    margin-top: 59px;
+}
+
+.products__desc-title::after {
+    content: "";
+    display: block;
+    width: 33.5%;
+    border-bottom: 1px solid #707070;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.products__desc-text {
+    font-size: 24px;
+    line-height: 170%;
+}
+
+.products__desc-link {
+    font-weight: 500;
+    /* текст с подчеркиванием */
+    text-decoration: underline;
+    color: #bb8b5d;
+}
